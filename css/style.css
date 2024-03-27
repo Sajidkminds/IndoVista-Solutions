@@ -847,6 +847,7 @@ body{
             position: relative;
             padding: 0 0 30px 0;
             background: #333;
+    
         }
         
         .footer .footer-top {
@@ -1074,7 +1075,8 @@ body{
             margin-left: 1rem;
             margin-right: 2rem;
         }
-        
+
+
 @media (max-width: 1200px){
     .faq{
         min-height: 70vh;
@@ -1368,47 +1370,3 @@ body{
 * drop downmn */
 /* Custom styles for carrer dropdown */
 
-
-/* Dropdown menu styles */
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f900;
-    min-width: 160px;
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 0px 0px 0px 110px;
-    margin: 1px 10px;
-    text-decoration: none;
-    color: #000;
-    display: block;
-}
-
-.dropdown-content a:hover {
-    background-color: #f1f1f100;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.dropbtn {
-    color: #fc9090;
-    text-decoration: none;
-    display: block;
-    padding: 10px 15px;
-}
-
-.dropbtn:hover {
-    background-color: #f1f1f100;
-    transition: 5s;
-
-} 
