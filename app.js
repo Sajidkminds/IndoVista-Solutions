@@ -13,6 +13,10 @@ app.get('/',(req,resp)=>{
     resp.sendFile(`${__dirname}/index.html`)
 })
 
+app.get('/university',(req,resp)=>{
+    resp.sendFile(`${__dirname}/university.html`);
+})
+
 
 
 
