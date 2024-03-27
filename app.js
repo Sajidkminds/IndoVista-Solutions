@@ -15,7 +15,7 @@ app.use(fileUpload());
 
 // Email configuration
 const transporter = nodemailer.createTransport({
-  host: 'smtp.example.com', // Your SMTP host
+  service: 'gmail',
   port: 587, // Your SMTP port (e.g., 587 for TLS, 465 for SSL)
   secure: false, // true for 465, false for other ports
   auth: {
@@ -28,19 +28,35 @@ const transporter = nodemailer.createTransport({
 app.post('/upload', (req, res) => {
 
   const uploadedFile = req.files.file;
+  const clientInfo = {
+    name : req.body.name,
+    email : req.body.email,
+    phone : req.body.phone,
+    position : req.body.status,
+    experience : req.body.experience,
+    details : req.body.details
+  }
 
   // Email options
   const mailOptions = {
     from: 'indovistasolutions.info@gmail.com',
     to: 'syedsaifali214@gmail.com',
     subject: 'Job Application',
-    text: 'Attached is the PDF file.',
+    text: `
+         Name : ${req.body.name}
+         Email : ${req.body.email}
+         Phone : ${req.body.phone}
+         Position : ${req.body.status}
+         Experience : ${req.body.experience}
+         Description : ${req.body.details}`,
+
     attachments: [
-      {
-        filename: uploadedFile.name,
-        content: uploadedFile.data
-      }
-    ]
+        { 
+            filename: uploadedFile.name,
+            content: uploadedFile.data
+        }
+      ]
+    
   };
 
   // Send email
