@@ -40,7 +40,7 @@ app.post('/upload', (req, res) => {
   // Email options
   const mailOptions = {
     from: 'indovistasolutions.info@gmail.com',
-    to: 'syedsaifali214@gmail.com',
+    to: ['syedsaifali214@gmail.com', 'sajidkminds@gmail.com'],
     subject: 'Job Application',
     text: `
          Name : ${req.body.name}
