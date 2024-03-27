@@ -40,7 +40,7 @@ app.post('/upload', (req, res) => {
   // Email options
   const mailOptions = {
     from: 'indovistasolutions.info@gmail.com',
-    to: ['syedsaifali214@gmail.com', 'sajidkminds@gmail.com'],
+    to: ['syedsaifalipec@gmail.com', 'sajidkminds@gmail.com'],
     subject: 'Job Application',
     text: `
          Name : ${req.body.name}
@@ -63,10 +63,10 @@ app.post('/upload', (req, res) => {
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
       console.log('Error:', error);
-      return res.status(500).send('Error occurred while sending email.');
+      return res.status(500).send('application failed');
     } else {
       console.log('Email sent:', info.response);
-      return res.status(200).send('Email sent successfully!');
+      return res.status(200).send('application successfull');
     }
   });
 });
