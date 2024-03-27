@@ -26,9 +26,6 @@ const transporter = nodemailer.createTransport({
 
 // Endpoint for file upload
 app.post('/upload', (req, res) => {
-  if (!req.files || !req.files.file) {
-    return res.status(400).send('No files were uploaded.');
-  }
 
   const uploadedFile = req.files.file;
 
@@ -74,7 +71,7 @@ app.get('/university',(req,resp)=>{
 
 
 
-const PORT = process.env.port || 3000;
+const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, ()=>{
     console.log(`SREVER IS ACTIVE ON PORT ${PORT}`);
