@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IndoVista Solutions</title>
-    <link rel="stylesheet" href="css/university.css">
+    <link rel="stylesheet" href="./css/careers.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="icon" href="./images/logo.svg">
@@ -25,14 +25,23 @@
         <div class="fas fa-bars"></div>
         <nav class="navbar">
             <ul>
-                <li><a href="index.html#home">home</a></li>
-                <li><a href="index.html#about">about</a></li>
-                <li><a href="index.html#service">services</a></li>
-                <li><a href="index.html#portfolio">portfolio</a></li>
-                <li><a href="index.html#team">team</a></li>
-                <li><a href="carrer.html">University</a></li>
-                <li><a href="index.html#contact">contact</a></li>
-                <li><a href="index.html#faq">FAQ</a></li>
+                <li><a href="#home">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#service">services</a></li>
+                <li><a href="#portfolio">portfolio</a></li>
+                <li><a href="#team">team</a></li>
+                <li><a href="#university">University</a></li>
+
+               <!-- <li class="dropdown">
+                    <a href="#" class="dropbtn">University </a>
+                    <div class="dropdown-content">
+
+                        <a href="internships.html">Internships</a>
+                        
+                    </div>
+                </li> -->
+                <li><a href="#contact">contact</a></li>
+                <li><a href="#faq">FAQ</a></li>
             </ul>
         </nav>
     </header>
@@ -41,16 +50,16 @@
         <h2>Home / University</h2>
     </section>
 
-    <section id="carrer-heading" class="carrer-heading">
-        <h1 class="heading">careers</h1>
+    <section id="career-heading" class="career-heading">
+        <h1 class="heading">Career</h1>
         <p>Job Opening in IndoVista Solutions. Apply Now!</p>
     </section>
-    <div class="carrer">
-        <div class="carrer-form">
-            <form action="./careers.php" method="POST" enctype="multipart/form-data">
-                <input type="text" name="name" placeholder="Name" class="carrer-form-txt" required>
-                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required placeholder="Contact number" maxlength="10" class="carrer-form-phone">
-                <input type="email" name="email" placeholder="Email" class="carrer-form-email" required>
+    <div class="career">
+        <div class="career-form">
+            <form action="/upload" method="POST" enctype="multipart/form-data">
+                <input type="text" name="name" placeholder="Name" class="career-form-txt" required>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required placeholder="Contact number" maxlength="10" class="career-form-phone">
+                <input type="email" name="email" placeholder="Email" class="career-form-email" required>
                 <div class="radio-class">
                     <h2 class="name">Apply For Which Post?</h2>
                 <label class="radio">
@@ -79,13 +88,13 @@
                     Digital Marketer
                 </label>
                 </div>
-                <input type="number" id="experience" name="experience" required placeholder="Years of Experience" class="carrer-form-experience">
-                <textarea placeholder="Other Details" name="details" class="carrer-form-txtarea" required></textarea>
+                <input type="number" id="experience" name="experience" required placeholder="Years of Experience" class="career-form-experience">
+                <textarea placeholder="Other Details" name="details" class="career-form-txtarea" required></textarea>
                 <div class="file">
                     <h2 class="name">Upload Your Resume</h2>
-                    <input class="upload" type="file" name="fileToUpload" accept=".doc,.docx,.pdf"><br><br><br>
+                    <input class="upload" type="file" name="file" accept=".doc,.docx,.pdf"><br><br><br>
                 </div>
-                <input type="submit" value="Submit" name="submit" class="carrer-form-btn">
+                <input type="submit" value="Submit" name="submit" class="career-form-btn">
             </form>
         </div>
     </div>
@@ -110,7 +119,7 @@
                         <ul>
                             <li><i class="ion-ios-arrow-forward"></i> <a href="index.html#portfolio">Portfolio</a></li>
                             <li><i class="ion-ios-arrow-forward"></i> <a href="index.html#team">Team</a></li>
-                            <li><i class="ion-ios-arrow-forward"></i> <a href="carrer.html">carrer</a></li>
+                            <li><i class="ion-ios-arrow-forward"></i> <a href="university.html">Career</a></li>
                             <li><i class="ion-ios-arrow-forward"></i> <a href="index.html#contact">Contact</a></li>
                             <li><i class="ion-ios-arrow-forward"></i> <a href="index.html#faq">FAQ</a></li>
                         </ul>
@@ -119,17 +128,17 @@
                     <div class="col-lg-3 col-md-6 footer-contact" style="font-size: 1.5rem;">
                         <h4>Contact Us</h4>
                         <p>
-                            <!-- Bara Akbarpur<br> -->
+                            
                             kanpur, Uttar Pradesh<br>
                             India <br>
-                            <!-- <strong>Phone:</strong> +91 9450689703<br> -->
+                        
                             <strong>Email:</strong> indovistasolutions.info@gmail.com<br>
                         </p>
 
                         <div class="social-links">
                             <a href="https://www.facebook.com/indovistasolutions"><i class="ion-logo-facebook"></i></a>
                             <a href="https://twitter.com/indovistasolutions"><i class="ion-logo-twitter"></i></a>
-                            <a href="https://www.linkedin.com/company/indovistasolutions/"><i class="ion-logo-linkedin"></i></a>
+                            <a href="https://www.linkedin.com/channel/indovistasolutions"><i class="ion-logo-linkedin"></i></a>
                             <a href="https://www.instagram.com/indovistasolutions"><i class="ion-logo-instagram"></i></a>
                             <a href="https://accounts.google.com/servicelogin/signinchooser?flowName=GlifWebSignIn&flowEntry=ServiceLogin"><i class="ion-logo-googleplus"></i></a>
                         </div>
