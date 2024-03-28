@@ -19,8 +19,8 @@ const transporter = nodemailer.createTransport({
   port: 587, // Your SMTP port (e.g., 587 for TLS, 465 for SSL)
   secure: false, // true for 465, false for other ports
   auth: {
-    user: 'indovistasolutions.info@gmail.com',
-    pass: 'mnec yors rnkt cfsq'
+    user: 'sajidrazapec@gmail.com',
+    pass: 'armm gurv phci ofed'
   }
 });
 
@@ -39,16 +39,16 @@ app.post('/upload', (req, res) => {
 
   // Email options
   const mailOptions = {
-    from: 'indovistasolutions.info@gmail.com',
-    to: ['syedsaifalipec@gmail.com', 'sajidkminds@gmail.com'],
+    from: 'sajidrazapec@gmail.com',
+    to: ['syedsaifalipec@gmail.com', 'indovistasolutions.info@gmail.com'],
     subject: 'Job Application',
     text: `
-         Name : ${req.body.name}
-         Email : ${req.body.email}
-         Phone : ${req.body.phone}
-         Position : ${req.body.status}
-         Experience : ${req.body.experience}
-         Description : ${req.body.details}`,
+        Name : ${req.body.name}
+        Email : ${req.body.email}
+        Phone : ${req.body.phone}
+        Position : ${req.body.status}
+        Experience : ${req.body.experience}
+        Description : ${req.body.details}`,
 
     attachments: [
         { 
